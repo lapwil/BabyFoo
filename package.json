@@ -17,7 +17,8 @@
     "node-sass": "^4.5.2",
     "nuxt": "latest",
     "picnic": "^6.3.2",
-    "sass-loader": "^6.0.3"
+    "sass-loader": "^6.0.3",
+    "vuex": "^2.3.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
