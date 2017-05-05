@@ -37,3 +37,9 @@
 @import '../../node_modules/picnic/src/plugins/dropimage/plugin';
 @import '../../node_modules/picnic/src/plugins/tabs/plugin';
 @import '../../node_modules/picnic/src/plugins/tooltip/plugin';
+
+.body {
+  padding: 60px 0 0;
+  max-width: 960px;
+  width: 90%;
+}
