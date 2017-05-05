@@ -44,3 +44,15 @@
   margin: 0 auto;
   width: 90%;
 }
+
+.red {
+  color: $red;
+}
+
+.blue {
+  color: $blue;
+}
+
+select[multiple] {
+  height: 150px;
+}
