@@ -1,5 +1,7 @@
 <template>
-    <h1 class="title">
-      Universal Vue.js Application Framework
-    </h1>
+    <main>
+        <h1>Babyfoo score board</h1>
+        <nuxt-link to="/users" class="stack button">Users</nuxt-link>
+        <nuxt-link to="/scores" class="stack button">Scores</nuxt-link>
+    </main>
 </template>
