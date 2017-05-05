@@ -20,4 +20,10 @@ module.exports = {
   ** Customize the progress-bar color
   */
   loading: { color: '#3B8070' },
+  plugins: [
+    { src: '~plugins/toast', ssr: false },
+  ],
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+  },
 };
