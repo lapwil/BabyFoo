@@ -14,10 +14,10 @@
                 </thead>
                 <tbody>
                 <tr v-for="score in scores">
-                    <td>{{ score.blue.join(', ') }}</td>
-                    <td>{{ score.red.join(', ') }}</td>
-                    <td>{{ score.score.blue }}</td>
-                    <td>{{ score.score.red }}</td>
+                    <td class="blue">{{ score.blue.join(', ') }}</td>
+                    <td class="red">{{ score.red.join(', ') }}</td>
+                    <td class="blue">{{ score.score.blue }}</td>
+                    <td class="red">{{ score.score.red }}</td>
                     <td :class="score.score.blue > score.score.red ? 'red' : 'blue'">
                         {{ score.score.blue > score.score.red ? 'Blue' : 'Red' }}
                     </td>
@@ -40,8 +40,8 @@
                         {{ user.name }}
                     </option>
                 </select>
-                <input type="number" max="10" min="0" class="stack red" v-model.number="newScore.score.red" placeholder="Red Score" />
                 <input type="number" max="10" min="0" class="stack blue" v-model.number="newScore.score.blue" placeholder="Blue Score" />
+                <input type="number" max="10" min="0" class="stack red" v-model.number="newScore.score.red" placeholder="Red Score" />
                 <button class="stack" type="submit">Envoyer</button>
             </form>
         </div>
