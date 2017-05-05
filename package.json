@@ -9,15 +9,24 @@
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=production node app.js",
     "precommit": "npm run lint",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "fix-lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "axios": "^0.16.0",
     "cross-env": "^3.1.4",
     "koa": "^2.0.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-json": "^2.0.2",
+    "koa-mongoose": "^2.0.0",
+    "koa-router": "^7.1.1",
+    "mongoose": "^4.9.7",
     "node-sass": "^4.5.2",
     "nuxt": "latest",
     "picnic": "^6.3.2",
     "sass-loader": "^6.0.3",
+    "slug": "^0.9.1",
+    "vue-toasted": "^1.0.27",
     "vuex": "^2.3.1"
   },
   "devDependencies": {
