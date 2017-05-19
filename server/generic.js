@@ -14,5 +14,5 @@ module.exports = function generic(modelName) {
     const User = model(modelName);
     ctx.body = await User.find();
   });
-  return router.routes();
+  return router;
 };

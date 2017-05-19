@@ -1,6 +1,7 @@
 const Koa = require('koa');
 const KoaRouter = require('koa-router');
 const koaBody = require('koa-bodyparser');
+const cors = require('kcors');
 const mongoose = require('koa-mongoose');
 const json = require('koa-json');
 const Nuxt = require('nuxt');
@@ -9,6 +10,7 @@ const config = require('./nuxt.config.js');
 const genericCRUD = require('./server/generic.js');
 
 const app = new Koa();
+app.use(cors());
 const router = new KoaRouter();
 config.dev = !(app.env === 'production');
 
@@ -40,8 +42,8 @@ app.use(mongoose({
 
 app.use(json());
 app.use(koaBody());
-router.use('/api/users', genericCRUD('User'));
-router.use('/api/scores', genericCRUD('Score'));
+router.use('/api/users', genericCRUD('User').routes());
+router.use('/api/scores', genericCRUD('Score').routes());
 
 app.use(router.routes());
 app.use(router.allowedMethods());
