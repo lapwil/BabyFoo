@@ -1,5 +1,5 @@
 import slug from 'slug';
-import UserAPI from '~plugins/api/user';
+import UserAPI from '../plugins/api/user';
 
 export const state = {
   usersCache: {},

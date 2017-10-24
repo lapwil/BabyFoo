@@ -1,4 +1,4 @@
-import ScoreAPI from '~plugins/api/score';
+import ScoreAPI from '../plugins/api/score';
 
 export const state = {
   scores: [],
